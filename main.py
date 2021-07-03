@@ -24,13 +24,6 @@ def button_clear():
     digits = ""
     equation.set("")
 
-def button_add():
-    first_number = e.get()
-    global f_num 
-    global math
-    math = "addition"
-    f_num = float(first_number)
-    e.delete(0, END)
 
 def button_equalto():
     try:
@@ -43,32 +36,6 @@ def button_equalto():
     except:
         equation.set("error")
         digits = ""
-
-
-def subtract():
-    first_number = e.get()
-    global f_num 
-    global math
-    math = "subtract"
-    f_num = float(first_number)
-    e.delete(0, END)
-
-def multiply():
-    first_number = e.get()
-    global f_num 
-    global math
-    math = "multiply"
-    f_num = float(first_number)
-    e.delete(0, END)
-
-def divide():
-    first_number = e.get()
-    global f_num 
-    global math
-    math = "divide"
-    f_num = float(first_number)
-    e.delete(0, END)
-
 
 
 
